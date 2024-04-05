@@ -1,7 +1,17 @@
+
+https://github.com/siesto1elemento/Django_budget_tracker/assets/89785142/2c3aa132-cc69-4249-b120-512a4a7a9e52
+Uploading demo_video.mp4…
+
+
+
+
 # Django_budget_tracker
 A budget tracker app made in django, tailored for tracking lifestyle expenses
 
 # How to Run a Django Project
+
+
+
 
 This guide will walk you through the steps to run a Django project on your local machine.
 
