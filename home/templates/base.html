@@ -8,21 +8,16 @@
     <title>Django Expense Tracker</title>
     <style>
         
-
         @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
         :root {
-          --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
           --primary-color: #4CAF50;
           --secondary-color: #FF5722;
-        }
-        
-        * {
-          box-sizing: border-box;
+          --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         body {
-          background-color: #f2f2f2;
+          background-color: #f8f8f8;
           font-family: 'Roboto', sans-serif;
           margin: 0;
           padding: 0;
@@ -30,42 +25,28 @@
         
         .container {
           margin: 30px auto;
-          width: 90%; /* Adjusted width for better responsiveness */
-          max-width: 400px; /* Set a maximum width for larger screens */
+          width: 90%;
+          max-width: 400px;
           background-color: #fff;
           box-shadow: var(--box-shadow);
           border-radius: 8px;
           padding: 20px;
         }
         
-        h1, h2, h3, h4 {
-          margin: 0;
-        }
-        
         h2 {
           color: var(--primary-color);
-          margin-bottom: 20px; /* Added margin for better separation */
+          margin-bottom: 20px;
+          text-align: center;
         }
         
         h3 {
           border-bottom: 1px solid #ccc;
           margin: 20px 0;
-          padding-bottom: 10px; /* Added padding for better separation */
-        }
-        
-        .inc-exp-container {
-          display: flex;
-          justify-content: space-between;
-          margin: 20px 0;
-        }
-        
-        .inc-exp-container > div {
-          flex: 1;
-          text-align: center;
+          padding-bottom: 10px;
         }
         
         .money {
-          font-size: 18px;
+          font-size: 16px;
           margin: 5px 0;
         }
         
@@ -87,10 +68,10 @@
         select {
           border: 1px solid #ccc;
           border-radius: 4px;
-          font-size: 16px;
-          padding: 10px;
+          font-size: 14px;
+          padding: 8px;
           width: 100%;
-          margin-bottom: 10px;
+          margin-bottom: 8px;
         }
         
         .btn {
@@ -102,28 +83,20 @@
           width: 100%;
           border-radius: 4px;
           cursor: pointer;
-          transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+          transition: background-color 0.3s ease;
         }
         
         .btn:hover {
           background-color: #388E3C;
         }
         
-        .list {
-          list-style-type: none;
-          padding: 0;
-          margin-bottom: 40px;
-        }
-        
         .list li {
-          background-color: #fafafa;
+          background-color: #f9f9f9;
           box-shadow: var(--box-shadow);
           color: #333;
           display: flex;
           justify-content: space-between;
-          position: relative;
           padding: 10px;
-          margin: 10px 0;
           border-radius: 4px;
         }
         
@@ -140,13 +113,10 @@
           background-color: #E57373;
           border: 0;
           color: #fff;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 20px;
           padding: 2px 5px;
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translate(-100%, -50%);
+          position: relative;
           opacity: 0;
           transition: opacity 0.3s ease;
           border-radius: 50%;
@@ -155,25 +125,6 @@
         .list li:hover .delete-btn {
           opacity: 1;
         }
-        
-        .container {
-            display: flex;
-            flex-direction: column; /* Set flex direction to column */
-            align-items: center; /* Center items horizontally */
-            margin: 30px auto;
-            width: 90%;
-            max-width: 400px;
-            background-color: #fff;
-            box-shadow: var(--box-shadow);
-            border-radius: 8px;
-            padding: 20px;
-          }
-          
-          h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            text-align: center; /* Center text */
-          }
           
 
 
