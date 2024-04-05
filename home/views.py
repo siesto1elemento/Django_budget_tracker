@@ -4,6 +4,7 @@ from .models import *
 def home(request):
     profile = Profile.objects.filter(user = request.user).first()
     expenses = Expense.objects.filter(user = request.user)
+    budget_categories = BudgetCategory.objects.all()    
     if request.method == 'POST':
         text = request.POST.get('text')
         amount = request.POST.get('amount')
@@ -21,5 +22,5 @@ def home(request):
         profile.save()
         return redirect('/')
 
-    context = {'profile' : profile , 'expenses' : expenses}
+    context = {'profile' : profile , 'expenses' : expenses,'budget_categories': budget_categories}
     return render(request , 'home.html' , context)

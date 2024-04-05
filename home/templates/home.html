@@ -5,6 +5,11 @@
 <h2>Budget Tracker</h2>
 
 <div class="container">
+  <div class="life">
+  {% for category in budget_categories %}
+      <h2 class="lifestyle">Tracking: ( {{ category.name }} )</h2>
+  {% endfor %}
+  </div>
   <h4>Your Balance</h4>
   <h1 id="balance">₹{{profile.balance}}</h1>
 
