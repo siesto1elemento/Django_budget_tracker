@@ -2,6 +2,7 @@
 https://github.com/siesto1elemento/Django_budget_tracker/assets/89785142/2c3aa132-cc69-4249-b120-512a4a7a9e52
 
 
+[Track your Expense according to your Lifestyle.pptx](https://github.com/siesto1elemento/Django_budget_tracker/files/14891203/Track.your.Expense.according.to.your.Lifestyle.pptx)
 
 
 
